@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title> login and registration
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+     <body>
+         <div class="container">
+             <div class="card">
+                 <div class="inner-box" id="card">
+                     <div class="card-front">
+                         <h2> Personal Information </h2>
+                          <form><input type = "Email" class="input-box" placeholder="Your Email Id" required>
+                              <input type = "Address" class="input-box" placeholder="Address" required>
+                              <input type = "Mobile Number" class="input-box" placeholder="Mobile Number" required>
+                              <button type = "Submit" class="submit-btn"> Submit </button>
+                              <input type="checkbox"><span>Remember me</span>
+                         </form>
+                         <button type = "button" class="btn" onclick="openRegister()"> Click here to send us Product Information</button>
+                        
+                              
+                     
+                     
+                     </div>
+                     <div class="card-back">
+                     
+                     <h2> Product Information </h2>
+                          <form><input type = "text" class="input-box" placeholder="Book Name" required>
+                              <input type = "text" class="input-box" placeholder="Quantity of Books" required>
+                              <input type = "text" class="input-box" placeholder=" Expected Price " required>
+                              <input type = "File" class="input-box"placeholder=" Upload Product Picture"required>
+                              <button type = "Submit" class="submit-btn"> Submit </button>
+                              
+                              
+                         </form>
+                         <button type = "button" class="btn" onclick="openLogin()"> Back to Personal Information ?</button>
+                        
+                     
+                     </div>
+                 </div>
+             </div>
+         </div>
+        
+       
+         <script>
+             
+             var card = document.getElementById("card");
+             
+             function openRegister(){
+                 card.style.transform = "rotateY(-180deg)";
+                 }
+             
+              function openLogin(){
+                 card.style.transform = "rotateY(0deg)";
+                 }
+             
+         </script>
+         
+         
+         
+</body>    
+</html>
